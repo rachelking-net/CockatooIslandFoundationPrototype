@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cockatoo Island Foundation</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<!--Navigation bar/header at top of page-->
+<nav>
+	<a href="landing.html">
+		<img id="landingpagelogo" src="images/logo.png" alt="Cockatoo Island Foundation logo i.e. Crane with pumpkin">
+  </a>
+  <main>
+    <nav role='navigation'>
+      <div id="menuToggle">
+        <input type="checkbox"/>
+        <span class="tog"></span>
+        <span class="tog" style="background-color: transparent"></span>
+        <span class="tog"></span>
+        <ul id="menu">
+          <a href="donate.html"><li>Donate</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+  </main>
+</nav>
+  
+<!--Content of contact us page including map embedded from Google maps and contact form-->
+<body>
+  <div class="container">
+    <div class="textLeft">
+      <div id="contacttext">
+        <div>
+          <h1 id="contactUs">CONTACT US</h1>
+          <p>Office 1, Cockatoo Island, Sydney Harbour <br> email: director@cockatooislandfoundation.com</p>
+          <!--Google maps of Cockatoo Island-->
+          <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7378.008301042997!2d151.16766577595075!3d-33.847604972648334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afa4e11383d7%3A0xf017d68f9f0ab30!2sCockatoo%20Island!5e1!3m2!1sen!2sau!4v1636114070224!5m2!1sen!2sau" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      
+  <!--Contact form for leaving a message-->
+        <div class="leavemsg">
+          <h3>Leave a message:</h3>
+          <div class="form_wrapper">
+            <div class="form_container">
+              <form>
+                <div class="row clearfix">
+                  <div class="col_half">
+                    <label>First name</label>
+                      <div class="input_field"> 
+                        <input type="text" name="first_name" required />
+                      </div>
+                    </div>
+                  <div class="col_half">
+                    <label>Last name</label>
+                    <div class="input_field"> 
+                      <input type="text" name="last_name" />
+                    </div>
+                  </div>
+                </div>
+                <div class="row clearfix">
+                  <div class="col_half_email">
+                    <label>Email</label>
+                    <div class="input_field"> 
+                      <input type="email" name="email" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="row clearfix">
+                  <div>
+                    <label>Message or inquiry</label>
+                    <div class="textarea_field">
+                      <textarea cols="46" rows="3" name="comments"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <a href="#" class="btn btn-next width-50 ml-auto" class="proceed" style="margin-right:20%">Submit</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!--Instagram icon in footer-->
+<footer class="footer">
+  <button class="insta"> <a href="https://www.instagram.com/"><img src="images/instaicon.png" alt="Instagram icon"></a></button>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

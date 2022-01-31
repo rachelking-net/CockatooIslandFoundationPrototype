@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cockatoo Island Foundation</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js">
+	</script>
+</head>
+
+<!--Loading page for website containing interactive ripple background and acknowledgement of country-->
+<body>
+	<div class="full-landing-image">
+		<div id="openingpage">
+
+      <!--Crane logo positioned above text-->
+			<img src="images/logo.png" alt="Cockatoo Island Foundation logo i.e. Crane with pumpkin" id="openinglogo">
+
+        <!--Acknowledgement of country-->
+        <p class="acknowledge"><em>We acknowledge the traditional custodians of Wareamah (Cockatoo Island), the largest island within Sydney Harbour situated in the lands of the Eora nations.</em></p> 
+
+	      <a href="landing.html"> <button class= "enter" type="button"> Enter</button> </a>
+      </div>
+    </div>
+</body>
+
+<!--Implementation of ripple effect background using javascript-->
+<script>$(".full-landing-image").ripples({
+  resolution: 200, perturbance: 0.04,
+})
+</script>
+</html>

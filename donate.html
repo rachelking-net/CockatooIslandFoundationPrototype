@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cockatoo Island Foundation</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--Navigation bar/header at top of page-->
+  <nav>
+	  <a href="landing.html">
+      <img id="landingpagelogo" src="images/logo.png" alt="Cockatoo Island Foundation logo i.e. Crane with pumpkin">
+    </a>
+
+    <main>
+      <nav role='navigation'>
+        <div id="menuToggle">
+         <input type="checkbox" />
+          <span class="tog"></span>
+          <span class="tog" style="background-color: transparent"></span>
+          <span class="tog" ></span>
+          <ul id="menu">
+            <a href="donate.html"><li>Donate</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+    </main>
+  </nav>
+  
+  <!--Written content asking for donations...-->
+  <div id="donate" class="containerdonate"><h1>DONATE<h1></div>
+
+  <div class="container">
+    <div class="textLeft">
+      <div id="donatetext">
+        <p>Donate to the Cockatoo Island Foundation’s campaign to revitalise the site into a permanent art island for generations of Sydneysiders and visitors to enjoy for years to come.
+        </p>  
+      </div>
+    </div>
+  </div>
+    
+  <!--Multistep form for donations-->
+  <form action="#" class="form">
+	  <div class="form-step form-step-active">
+      <div class="much">
+        <p class="howMuch"><strong>How much would you like to donate?</strong></p>
+		    <div class="input-group">
+	        <button class="circleButton" type="button">$25</button>
+          <button class="circleButton" type="button">$50</button>
+          <button class="circleButton" type="button">$100</button>
+          <button class="circleButton" type="button">$200</button>
+          <button class="circleButton" type="button">$500</button>
+          <button class="circleButton" type="button">$1000</button>
+          <div style="margin-left: 5%; margin-top: 5%">
+            <label for="other">Other (enter amount):</label>
+            <input type="text" style="width: 40%" name="other">
+          </div>
+          <br>
+        </div>
+  
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto" class="proceed" style="margin-right:25%">Proceed</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Step two of donation process i.e. Billing information-->
+    <div class="billing">
+    	<div class="form-step">
+      <h3>Billing Information </h3>
+	    <br>
+      <div class="form_wrapper">
+        <div class="form_container">
+         <div class="row clearfix">
+            <div class="col_half">
+              <label for="first_name">First name</label>
+              <div class="input_field"> 
+                <input type="text" name="first_name" required />
+              </div>
+            </div>
+            <div class="col_half">
+              <label for="last_name">Last name</label>
+              <div class="input_field"> 
+                <input type="text" name="last_name" />
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="col_half_email">
+              <label for="email">Email</label>
+              <div class="input_field"> 
+                <input type="email" name="email" required />
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row clearfix">
+            <div>
+              <label for="address">Address:</label>
+                <div class="input_field"> 
+                  <input type="text" name="address" required/>
+                </div>
+              </div>
+            </div>
+            <div class="row clearfix" style="margin-bottom: 20%">
+                <div class="col_half">
+                  <label for="city">City</label>
+                  <div class="input_field"> 
+                    <input type="text" name="city" required/>
+                  </div>
+                </div>
+              <div class="col_half">
+                <label for="state">State</label>
+                <div class="input_field"> 
+                <input type="text" name="state"/>
+                </div>
+              </div>
+              <div class="col_half">
+                  <label style="padding-top:4%" for="country">Country</label>
+                  <div class="input_field"> 
+                   <input type="text" name="country" required />
+                  </div>
+                </div>
+                <div class="col_half">
+                  <label style="padding-top:4%" for="postcode">Postcode</label>
+                  <div class="input_field"> 
+                    <input type="text" name="postcode" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <br>
+      <!--Navigation buttons to go between steps of donation process-->
+      <div class="btns-group">
+          <a href="#" class="btn btn-prev">Prev</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Step three of donation process i.e. confirm payment-->
+    <div class="confirm">
+      <div class="form-step">
+        <h3 style="margin-left: 20px">Confirm payment </h3>
+        <br>
+        <div class="thousanddollars">
+          <span class="circle">$1000</span>
+          <p class="donation">Donation to the Cockatoo Island Foundation</p>
+        </div>
+        <div style="margin-left: 5%; margin-top: 5%">
+        <div class="form_wrapper">
+          <div class="form_container">
+            <div class="row clearfix">
+              <div class="col_half">
+                <label for="fullname">Name on card</label>
+                <div class="input_field"> 
+                  <input type="text" name="fullname" required />
+                </div>
+              </div>
+            <div class="col_half">
+              <label for="cvv">CVV</label>
+              <div class="input_field"> 
+              <input type="text" name="cvv" />
+            </div>
+          </div>
+        </div>
+      <div class="row clearfix">
+        <div class="col_half_email">
+          <label for="cardnum">Card number</label>
+          <div class="input_field"> 
+            <input type="number" name="cardnum" required />
+          </div>
+        </div>
+      </div>
+          <div class="row clearfix" style="margin-bottom: 20%">
+              <div class="col_half">
+                <label for="date">Expiration date</label>
+                <div class="input_field"> 
+                  <input type="month" name="date" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <br>
+        <div class="btns-group-two">
+          <a href="#" class="btn btn-prev">Prev</a>
+          <a href="thankyou.html" class="btn btn-next">Submit</a>
+        </div>
+      </div>
+    </div>
+</form>
+  <!--- Progress bar = wayfinding device so users know what step of the process they are on and how many steps there are--->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+      <div class="progress-step progress-step-active" data-title=
+      "Select amount"></div>
+      <div class="progress-step" data-title=
+      "Billing info"></div>
+      <div class="progress-step" data-title="Confirm Payment"></div>
+    </div>
+  </div>
+
+
+</body>
+
+<!--Instagram icon in footer-->
+<footer class="footer">
+<button class="insta"> <a href="https://www.instagram.com/"><img src="images/instaicon.png"></a></button>
+</footer>
+  <script src="script.js"></script>
+</html>
